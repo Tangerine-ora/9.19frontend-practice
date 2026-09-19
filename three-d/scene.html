@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>校园三维导览 · 智慧校园导览</title>
+  <link href="../libs/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html, body { height: 100%; }
+    body { margin: 0; overflow: hidden; }
+    #scene-canvas { display: block; }
+    /* 顶部返回条：覆盖在画布上方，可返回首页 */
+    .scene-topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+      background: rgba(13, 110, 253, 0.92);
+      color: #fff;
+    }
+    .scene-topbar .title { font-weight: 700; font-size: 1rem; }
+    .scene-topbar .btn-back {
+      background: #fff;
+      color: #0d6efd;
+      border: none;
+      border-radius: 6px;
+      padding: 4px 14px;
+      font-size: 0.875rem;
+      text-decoration: none;
+    }
+    .scene-hint {
+      position: fixed;
+      bottom: 12px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      margin: 0;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.55);
+      color: #fff;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="scene-topbar">
+    <span class="title">校园三维导览</span>
+    <a class="btn-back" href="../index.html">&larr; 返回首页</a>
+  </div>
+
+  <canvas id="scene-canvas"></canvas>
+
+  <p class="scene-hint">左键拖拽旋转 · 滚轮缩放 · 右键平移</p>
+
+  <script src="../libs/three.min.js"></script>
+  <script src="../libs/OrbitControls.js"></script>
+  <script src="scene.js"></script>
+</body>
+</html>
