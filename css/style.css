@@ -56,3 +56,33 @@ header[id] {
 .module-section {
   min-height: 120px;
 }
+
+/* 筛选控件组 */
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  color: #495057;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.filter-group .btn {
+  border-radius: 999px;
+}
+
+/* 自习室卡片 */
+.room-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.room-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
