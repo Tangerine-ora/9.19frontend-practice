@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>智慧校园导览 · 首页</title>
+  <!-- Bootstrap 本地离线包 -->
+  <link href="libs/bootstrap.min.css" rel="stylesheet">
+  <!-- 自定义样式 -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ============ 导航栏：四个入口 ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path fill="currentColor" d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-3.72v3.71z"/>
+        </svg>
+        智慧校园导览
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav"
+              aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rooms">自习室</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stats">统计</a></li>
+          <li class="nav-item"><a class="nav-link" href="three-d/scene.html">校园三维</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ 首页区块 ============ -->
+  <header id="home" class="hero text-white">
+    <div class="container py-5">
+      <h1 class="display-6 fw-bold">一站式校园信息服务</h1>
+      <p class="lead mb-0">查自习室、看使用统计、逛三维校园——一个页面全部搞定。</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <!-- 首页卡片区块：四个模块入口 -->
+    <section aria-labelledby="cards-title">
+      <h2 id="cards-title" class="h4 mb-4">功能导航</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 module-card">
+            <div class="card-body d-flex flex-column">
+              <span class="card-badge bg-primary-subtle text-primary">模块一</span>
+              <h3 class="h5 card-title mt-2">首页导览</h3>
+              <p class="card-text text-muted flex-grow-1">平台入口页，聚合各功能模块，快速跳转到目标服务。</p>
+              <a href="#home" class="btn btn-outline-primary btn-sm mt-2">回到顶部</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 module-card">
+            <div class="card-body d-flex flex-column">
+              <span class="card-badge bg-success-subtle text-success">模块二</span>
+              <h3 class="h5 card-title mt-2">自习室查询</h3>
+              <p class="card-text text-muted flex-grow-1">按楼层与开放状态筛选，即时查看可用自习室列表。</p>
+              <a href="#rooms" class="btn btn-outline-success btn-sm mt-2">去查询</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 module-card">
+            <div class="card-body d-flex flex-column">
+              <span class="card-badge bg-warning-subtle text-warning-emphasis">模块三</span>
+              <h3 class="h5 card-title mt-2">使用统计</h3>
+              <p class="card-text text-muted flex-grow-1">基于 data.json 渲染各自习室使用量柱状图，数据一目了然。</p>
+              <a href="#stats" class="btn btn-outline-warning btn-sm mt-2">看图表</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card h-100 module-card">
+            <div class="card-body d-flex flex-column">
+              <span class="card-badge bg-info-subtle text-info-emphasis">模块四</span>
+              <h3 class="h5 card-title mt-2">校园三维</h3>
+              <p class="card-text text-muted flex-grow-1">Three.js 三维场景，鼠标拖拽环绕查看校园地标。</p>
+              <a href="three-d/scene.html" class="btn btn-outline-info btn-sm mt-2">进入三维导览</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- ============ 自习室区块（占位） ============ -->
+    <section id="rooms" class="module-section">
+      <h2 class="h4">自习室查询</h2>
+      <p class="text-muted">【占位】第二步实现：楼层／开放状态筛选控件与自习室列表将显示在此处。</p>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- ============ 统计区块（占位） ============ -->
+    <section id="stats" class="module-section">
+      <h2 class="h4">使用统计图表</h2>
+      <p class="text-muted">【占位】第二步实现：加载 data.json，各自习室使用量 ECharts 柱状图将显示在此处。</p>
+    </section>
+  </main>
+
+  <!-- ============ 页脚 ============ -->
+  <footer class="bg-light border-top py-4 mt-auto">
+    <div class="container text-center text-muted small">
+      <p class="mb-1">智慧校园导览 · 软件开发综合实践案例四</p>
+      <p class="mb-0">首页 / 自习室 / 统计 / 校园三维</p>
+    </div>
+  </footer>
+
+  <script src="libs/bootstrap.bundle.min.js"></script>
+</body>
+</html>
