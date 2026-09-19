@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "砂之星球通缉悬赏榜",
+    "source": "Bernadelli 保险社通缉档案（课程模拟数据）",
+    "period": "大坠落150年后 · 本季度",
+    "unit": "亿双元"
+  },
+  "items": [
+    { "name": "Vash the Stampede", "bounty": 600, "faction": "主角一行", "note": "人形台风·失落七月罪魁" },
+    { "name": "Million Knives", "bounty": 480, "faction": "GUNG-HO-GUN", "note": "独立种PLANT·悬赏未公开，此处为估值" },
+    { "name": "Legato Bluesummers", "bounty": 120, "faction": "GUNG-HO-GUN", "note": "Knives忠实部下" },
+    { "name": "Chapel the Evergreen", "bounty": 90, "faction": "米迦勒之眼", "note": "Wolfwood之师" },
+    { "name": "Livio / Razlo", "bounty": 75, "faction": "米迦勒之眼", "note": "双重人格杀手" },
+    { "name": "Zazie the Beast", "bounty": 60, "faction": "GUNG-HO-GUN", "note": "驭兽者" },
+    { "name": "Midvalley the Hornfreak", "bounty": 55, "faction": "GUNG-HO-GUN", "note": "音枪手" },
+    { "name": "Wolfwood", "bounty": 0, "faction": "主角一行", "note": "无公开悬赏·组织内部代号" }
+  ]
+}

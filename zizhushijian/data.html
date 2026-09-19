@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>悬赏数据 · TRIGUN 星尘导览</title>
+  <link href="../school/libs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ============ 统一导航 ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="brand-mark">★</span> TRIGUN 星尘导览
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav"
+              aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="characters.html">人物图鉴</a></li>
+          <li class="nav-item"><a class="nav-link active" href="data.html">悬赏数据</a></li>
+          <li class="nav-item"><a class="nav-link" href="three-d/scene.html">沙星三维</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="section-title h3 mb-2">悬赏数据看板</h1>
+    <p class="text-muted">砂之星球通缉悬赏一览 · 数据来自 Bernadelli 保险社档案（课程模拟数据），
+      人物设定见<a href="characters.html">人物图鉴</a>。</p>
+
+    <!-- 概览卡片 -->
+    <div class="row g-3 mb-4" id="stat-cards"></div>
+
+    <!-- 图表 -->
+    <div class="card border-0 shadow-sm">
+      <div class="card-body">
+        <div id="chart-status" class="alert alert-warning d-none mb-3" role="alert"></div>
+        <div id="usage-chart" style="width:100%;height:440px;"></div>
+        <p class="chart-meta text-muted mt-3 mb-0" id="chart-meta"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container py-4 text-center small">
+      <p class="mb-1">TRIGUN 星尘导览 · 个人技术整合练习（期末原型）</p>
+      <p class="mb-0 text-muted">首页 / 人物图鉴 / 悬赏数据 / 沙星三维</p>
+    </div>
+  </footer>
+
+  <script src="../school/libs/bootstrap.bundle.min.js"></script>
+  <script src="../school/libs/echarts.min.js"></script>
+  <script src="js/data-board.js"></script>
+</body>
+</html>
