@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRIGUN 星尘导览 · 首页</title>
+  <link href="../school/libs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ============ 统一导航（全站复用） ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="brand-mark">★</span> TRIGUN 星尘导览
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav"
+              aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="characters.html">人物图鉴</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">悬赏数据</a></li>
+          <li class="nav-item"><a class="nav-link" href="three-d/scene.html">沙星三维</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ Hero ============ -->
+  <header class="hero">
+    <div class="container py-5">
+      <span class="hero-tag">内藤泰弘 · 科幻西部漫画</span>
+      <h1 class="display-5 fw-bold mt-2">LOVE &amp; PEACE</h1>
+      <p class="lead col-lg-8">
+        在砂之星球上，有一位被悬赏 <strong>600 亿双元</strong>、人称「人形台风」的男人。
+        这里是关于《TRIGUN》与《TRIGUN MAXIMUM》的整合导览——人物、数据与三维沙盘。
+      </p>
+      <a class="btn btn-light btn-lg me-2" href="characters.html">进入人物图鉴</a>
+      <a class="btn btn-outline-light btn-lg" href="three-d/scene.html">逛沙星沙盘</a>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <!-- ============ 模块卡片 ============ -->
+    <section aria-labelledby="modules-title">
+      <h2 id="modules-title" class="h4 mb-4">四个模块</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="card module-card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="card-num">01</span>
+              <h3 class="h5 card-title">统一入口</h3>
+              <p class="card-text text-muted flex-grow-1">页面与导航：四模块共用导航栏与沙漠西部主题，从这里出发。</p>
+              <a href="index.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card module-card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="card-num">02</span>
+              <h3 class="h5 card-title">人物图鉴</h3>
+              <p class="card-text text-muted flex-grow-1">交互：按阵营筛选 + 关键词搜索，人物数据由数组即时渲染。</p>
+              <a href="characters.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card module-card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="card-num">03</span>
+              <h3 class="h5 card-title">悬赏数据</h3>
+              <p class="card-text text-muted flex-grow-1">可视化：fetch 加载 JSON，ECharts 渲染悬赏金额柱状图。</p>
+              <a href="data.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="card module-card h-100">
+            <div class="card-body d-flex flex-column">
+              <span class="card-num">04</span>
+              <h3 class="h5 card-title">沙星三维</h3>
+              <p class="card-text text-muted flex-grow-1">进阶：Three.js 搭建沙漠星球、PLANT 与旋转十字架。</p>
+              <a href="three-d/scene.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <!-- ============ 作品速览（与人物/数据模块衔接） ============ -->
+    <section class="row g-5 align-items-center">
+      <div class="col-lg-5">
+        <img src="images/trimax01.jpg" alt="TRIGUN MAXIMUM 第一卷封面" class="img-fluid rounded shadow-sm">
+      </div>
+      <div class="col-lg-7">
+        <h2 class="h4">关于这部作品</h2>
+        <p class="text-muted">
+          《TRIGUN》1995 年起在德间书店《月刊少年CAPTAIN》连载，后更名《TRIGUN MAXIMUM》，
+          在少年画报社《Young King Ours》连载至 2007 年，共 <strong>14 卷</strong>单行本，
+          并于 2009 年获日本科幻最高荣誉<strong>星云赏</strong>。1998 年推出 26 集电视动画，
+          2010 年剧场版上映，2023 年新作《TRIGUN STAMPEDE》播出。
+        </p>
+        <p class="text-muted">
+          故事发生在「大坠落」约一百五十年后的砂之星球：人类依靠名为
+          <strong>PLANT</strong> 的人造生物能源艰难求生，七座城市以月份命名。
+          你可以在<a href="characters.html">人物图鉴</a>认识主角们，
+          在<a href="data.html">悬赏数据</a>查看通缉金额，
+          再到<a href="three-d/scene.html">沙星三维</a>俯瞰这颗星球。
+        </p>
+        <p class="mb-0">
+          <em>一个关于宇宙、生命、掠夺与战争，以及爱与和平的故事。</em>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container py-4 text-center small">
+      <p class="mb-1">TRIGUN 星尘导览 · 个人技术整合练习（期末原型）</p>
+      <p class="mb-0 text-muted">首页 / 人物图鉴 / 悬赏数据 / 沙星三维</p>
+    </div>
+  </footer>
+
+  <script src="../school/libs/bootstrap.bundle.min.js"></script>
+</body>
+</html>

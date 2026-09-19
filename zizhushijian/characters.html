@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人物图鉴 · TRIGUN 星尘导览</title>
+  <link href="../school/libs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ============ 统一导航 ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="brand-mark">★</span> TRIGUN 星尘导览
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav"
+              aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link active" href="characters.html">人物图鉴</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">悬赏数据</a></li>
+          <li class="nav-item"><a class="nav-link" href="three-d/scene.html">沙星三维</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="section-title h3 mb-4">人物图鉴</h1>
+
+    <!-- 阵营筛选 + 关键词搜索（交互） -->
+    <div class="filter-bar mb-3">
+      <button type="button" class="btn btn-sm btn-outline-danger active" data-faction="all">全部</button>
+      <button type="button" class="btn btn-sm btn-outline-danger" data-faction="protagonist">主角一行</button>
+      <button type="button" class="btn btn-sm btn-outline-danger" data-faction="gunho">GUN-HO-GUN</button>
+      <button type="button" class="btn btn-sm btn-outline-danger" data-faction="eye">米迦勒之眼</button>
+      <button type="button" class="btn btn-sm btn-outline-danger" data-faction="crew">SEEDS船员</button>
+    </div>
+    <div class="mb-4">
+      <input type="search" id="char-search" class="form-control form-control-sm search-box"
+             placeholder="搜索人物名或关键词（如 PLANT、十字架、牧师）">
+    </div>
+
+    <p class="text-muted small mb-3" id="char-count"></p>
+    <div class="row g-4" id="char-list" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container py-4 text-center small">
+      <p class="mb-1">TRIGUN 星尘导览 · 个人技术整合练习（期末原型）</p>
+      <p class="mb-0 text-muted">首页 / 人物图鉴 / 悬赏数据 / 沙星三维</p>
+    </div>
+  </footer>
+
+  <script src="../school/libs/bootstrap.bundle.min.js"></script>
+  <script src="js/characters.js"></script>
+</body>
+</html>
