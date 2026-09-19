@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>沙星三维 · TRIGUN 星尘导览</title>
+  <link href="../../school/libs/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <style>
+    html, body { height: 100%; }
+    #scene-wrap { position: relative; height: calc(100vh - 56px); min-height: 480px; }
+    #scene-canvas { display: block; width: 100%; height: 100%; }
+    .scene-hud {
+      position: absolute; top: 14px; left: 14px; z-index: 10;
+      background: rgba(43, 29, 18, 0.72); color: #f3e6d0;
+      padding: 10px 14px; border-radius: 10px; font-size: 0.82rem;
+      max-width: 260px; line-height: 1.7;
+    }
+    .btn-back {
+      position: absolute; top: 14px; right: 14px; z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <!-- ============ 统一导航 ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">
+        <span class="brand-mark">★</span> TRIGUN 星尘导览
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNav" aria-controls="mainNav"
+              aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="../characters.html">人物图鉴</a></li>
+          <li class="nav-item"><a class="nav-link" href="../data.html">悬赏数据</a></li>
+          <li class="nav-item"><a class="nav-link active" href="scene.html">沙星三维</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="scene-wrap">
+    <canvas id="scene-canvas"></canvas>
+    <div class="scene-hud">
+      <strong>沙星 · 大坠落150年后</strong><br>
+      拖拽旋转视角 · 滚轮缩放 · 右键平移<br>
+      双子太阳之下：红岩台地、PLANT 营养罐、
+      Punisher 十字架与边境小镇
+    </div>
+    <a class="btn btn-light btn-sm btn-back" href="../index.html">← 返回首页</a>
+  </div>
+
+  <script src="../../school/libs/bootstrap.bundle.min.js"></script>
+  <script src="../../school/libs/three.min.js"></script>
+  <script src="../../school/libs/OrbitControls.js"></script>
+  <script src="scene.js"></script>
+</body>
+</html>
